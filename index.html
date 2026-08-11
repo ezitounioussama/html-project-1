@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Oussama Ezitouni - HTML Project 1">
+  <title>Oussama Ezitouni | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #1f2430;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f5a623;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      border-bottom: 3px solid #f5a623;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Home */
+    #home {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    #home img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Work */
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project h3 { margin-bottom: 10px; }
+
+    /* Resume */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th { background-color: #1f2430; color: #fff; }
+
+    /* Contact form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 500px;
+    }
+
+    label { font-weight: bold; }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #1f2430;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover { background-color: #f5a623; color: #1f2430; }
+
+    /* Footer */
+    footer {
+      background-color: #1f2430;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    footer a { color: #f5a623; }
+
+    video { max-width: 100%; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME ===== -->
+    <section id="home">
+      <img src="https://github.com/ezitounioussama.png" alt="Photo of Oussama Ezitouni">
+      <h1>Oussama Ezitouni</h1>
+      <p>Web Developer in training &mdash; building things one checkpoint at a time.</p>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is Oussama Ezitouni. I work in the IT field and I am currently
+        learning web development. I enjoy solving problems, automating boring tasks,
+        and turning ideas into real projects. This page is my first portfolio built
+        entirely with HTML.
+      </p>
+      <p>Here is a short video that represents my learning journey:</p>
+      <video controls width="640">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Sorry, your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section id="work">
+      <h2>My Work</h2>
+
+      <article class="project">
+        <h3>Warehouse Lens</h3>
+        <p>A dashboard project for visualizing warehouse data.</p>
+        <ul>
+          <li>Data visualization</li>
+          <li>Inventory tracking</li>
+        </ul>
+        <p><a href="https://github.com/ezitounioussama/WarehouseLens" target="_blank">View on GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Cybersecurity Monitoring Dashboard</h3>
+        <p>A dashboard for monitoring security events and alerts.</p>
+        <ul>
+          <li>Real-time monitoring</li>
+          <li>Alert management</li>
+        </ul>
+        <p><a href="https://github.com/ezitounioussama/cybersecurity-monitoring-dashboard" target="_blank">View on GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>RIASEC Career Guide</h3>
+        <p>A career orientation tool based on the RIASEC personality model.</p>
+        <ul>
+          <li>Interactive questionnaire</li>
+          <li>Career suggestions</li>
+        </ul>
+        <p><a href="https://github.com/ezitounioussama/riasec-career-guide" target="_blank">View on GitHub</a></p>
+      </article>
+    </section>
+
+    <!-- ===== RESUME ===== -->
+    <section id="resume">
+      <h2>Resume</h2>
+
+      <h3>Experience</h3>
+      <table>
+        <tr>
+          <th>Period</th>
+          <th>Role</th>
+          <th>Company</th>
+        </tr>
+        <tr>
+          <td>2024 &ndash; Present</td>
+          <td>IT Specialist</td>
+          <td>Intelcia</td>
+        </tr>
+        <tr>
+          <td>2026 &ndash; Present</td>
+          <td>Web Development Student</td>
+          <td>GoMyCode</td>
+        </tr>
+      </table>
+
+      <h3>Skills</h3>
+      <ol>
+        <li>HTML &amp; semantic markup</li>
+        <li>Git &amp; GitHub workflow</li>
+        <li>Linux command line</li>
+        <li>Problem solving</li>
+      </ol>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="job">Job opportunity</option>
+          <option value="project">Project collaboration</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Oussama Ezitouni &mdash; HTML Project 1 (GoMyCode Checkpoint)</p>
+    <p>
+      <a href="https://github.com/ezitounioussama" target="_blank">GitHub</a> |
+      <a href="#home">Back to top</a>
+    </p>
+  </footer>
+
+</body>
+</html>
